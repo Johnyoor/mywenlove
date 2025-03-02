@@ -1,0 +1,61 @@
+body {
+    background: url('https://www.transparenttextures.com/patterns/love-heart-pattern.png');
+    background-size: 50px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: green;
+    display: none;
+}
+
+.move {
+    animation: moveButton 1s infinite alternate;
+}
+
+@keyframes moveButton {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
